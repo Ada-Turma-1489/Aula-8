@@ -9,9 +9,9 @@ using TodoApi;
 
 namespace TodoApi.Migrations
 {
-    [DbContext(typeof(TodoDbContext))]
-    [Migration("20251017005750_Inicio")]
-    partial class Inicio
+    [DbContext(typeof(CaixaDbContext))]
+    [Migration("20251021222420_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,13 +25,12 @@ namespace TodoApi.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Prioridade")
+                    b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Titulo")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
+                    b.Property<int>("Priority")
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
 

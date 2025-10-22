@@ -5,7 +5,7 @@
 namespace TodoApi.Migrations
 {
     /// <inheritdoc />
-    public partial class Inicio : Migration
+    public partial class InitialMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -16,8 +16,8 @@ namespace TodoApi.Migrations
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Titulo = table.Column<string>(type: "TEXT", nullable: false),
-                    Prioridade = table.Column<string>(type: "TEXT", nullable: false)
+                    Description = table.Column<string>(type: "TEXT", nullable: false),
+                    Priority = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
