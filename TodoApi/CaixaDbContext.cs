@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Dominio;
+using Microsoft.EntityFrameworkCore;
 
 namespace TodoApi
 {

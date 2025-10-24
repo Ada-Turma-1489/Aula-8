@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Dominio;
+using Microsoft.AspNetCore.Mvc;
 using System.Net.Mime;
 
 namespace TodoApi.Controllers
@@ -16,7 +17,7 @@ namespace TodoApi.Controllers
         {
             this.caixaDbContext = caixaDbContext;
         }
-        
+
         // No REST os Métodos/Verbos são Semânticos
         // CREATE   -> POST
         // READ     -> GET

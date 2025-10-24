@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Todo>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Tarefas</h1>
+    <p>
+        @{
+            foreach (var tarefa in Model)
+            {
+                <p>@tarefa.Description</p>
+            }
+        }
+    </p>
+</div>
