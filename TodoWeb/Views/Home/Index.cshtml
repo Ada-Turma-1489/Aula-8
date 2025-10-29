@@ -1,17 +1,48 @@
 ﻿@model IEnumerable<Todo>
 
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "List of Todos";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Tarefas</h1>
-    <p>
-        @{
-            foreach (var tarefa in Model)
-            {
-                <p>@tarefa.Description</p>
-            }
-        }
-    </p>
+<a asp-action="Create" class="btn btn-outline-primary">Create TODO</a>
+
+<div class="container py-3">
+    <h1 class="display-4 mb-4">TODOS</h1>
+
+    @if (Model == null || !Model.Any())
+    {
+        <div class="alert alert-info mb-0">There are no todos in your list.</div>
+    }
+    else
+    {
+        <div class="table">
+            <table class="table table-striped table-hover table-bordered align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th scope="col">@Html.DisplayNameFor(model => model.Id)</th>
+                        <th scope="col">@Html.DisplayNameFor(model => model.Description)</th>
+                        <th scope="col" colspan="3" class="text-center">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var tarefa in Model)
+                    {
+                        <tr>
+                            <td>@tarefa.Id</td>
+                            <td>@tarefa.Description</td>
+                            <td class="text-center">
+                                <a asp-action="Details" asp-route-id="@tarefa.Id" class="btn btn-primary btn-sm">Details</a>
+                            </td>
+                            <td class="text-center">
+                                <a asp-action="Edit" asp-route-id="@tarefa.Id" class="btn btn-warning btn-sm">Editar</a>
+                            </td>
+                            <td class="text-center">
+                                <a asp-action="Delete" asp-route-id="@tarefa.Id" class="btn btn-danger btn-sm">Apagar</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
 </div>

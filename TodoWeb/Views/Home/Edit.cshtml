@@ -1,0 +1,20 @@
+﻿@model Todo
+
+<h1>Edit TODO</h1>
+
+<form asp-action="Save" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div class="mb-3">
+        <label class="form-label">@Html.DisplayNameFor(model => model.Id)</label>
+        <input asp-for="Id" class="form-control" disabled/>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">@Html.DisplayNameFor(model => model.Description)</label>
+        <input asp-for="Description" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">@Html.DisplayNameFor(model => model.Priority)</label>
+        <select asp-for="Priority" class="form-select" asp-items="@Html.GetEnumSelectList<Priority>()"></select>
+    </div>
+    <button type="submit" class="btn btn-primary btn-sm">Save</button>
+</form>

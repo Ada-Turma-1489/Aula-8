@@ -1,0 +1,29 @@
+﻿@if (!string.IsNullOrWhiteSpace(ViewBag.Mensagem))
+{
+    @if(ViewBag.Success == true)
+    {
+        <div class="alert alert-success d-flex align-items-center" role="alert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill" /></svg>
+            <div>
+                @ViewBag.Mensagem
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <br/>
+        @if (ViewBag.TodoId != null)
+        {
+            <a asp-action="Details" asp-route-id="@ViewBag.TodoId" class="text-center">Details</a>
+        }
+    }
+    
+    @if (ViewBag.Success == false)
+    {
+        <div class="alert alert-danger d-flex align-items-center" role="alert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill" /></svg>
+            <div>
+                @ViewBag.Mensagem
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+}
