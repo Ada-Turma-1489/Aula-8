@@ -1,5 +1,6 @@
 using System.Reflection;
 using System.Text.Json.Serialization;
+using TodoApi.Security;
 
 namespace TodoApi
 {
@@ -10,7 +11,7 @@ namespace TodoApi
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
+            builder.Services.Configure<ApiAccessOptions>(builder.Configuration.GetSection("ApiAccess"));
             builder.Services.AddCors(option => 
             {
                 option.AddPolicy(DEFAULT_CORS_POLICY, policy =>
@@ -20,7 +21,6 @@ namespace TodoApi
                         .AllowAnyHeader();
                 });
             });
-
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(c =>
             {
@@ -47,7 +47,10 @@ namespace TodoApi
                 c.IncludeXmlComments(documentationFile);
             });
 
-            builder.Services.AddControllers()
+            builder.Services.AddControllers(options => 
+            {
+                options.Filters.Add<ApiTenantFilter>();
+            })
                 .AddJsonOptions(option => option.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()));
 
 

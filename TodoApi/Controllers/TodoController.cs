@@ -32,6 +32,7 @@ namespace TodoApi.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
+            //var todos = caixaDbContext.Todos.Where(t => t.Tenant == tenantApi);
             return Ok(caixaDbContext.Todos);
         }
 

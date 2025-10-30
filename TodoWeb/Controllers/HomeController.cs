@@ -15,7 +15,6 @@ namespace TodoWeb.Controllers
         // GET / ou GET /Home/Index
         public async Task<IActionResult> Index()
         {
-            
             var response = await client.GetAsync("");
 
             var conteudo = await response.Content.ReadFromJsonAsync<IEnumerable<Todo>>();
