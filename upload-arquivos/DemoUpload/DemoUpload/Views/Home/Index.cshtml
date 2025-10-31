@@ -1,0 +1,19 @@
+﻿@model PessoaViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <form asp-action="Upload" method="post" enctype="multipart/form-data">
+        <p>
+            <label asp-for="Nome"></label>
+            <input asp-for="Nome" />
+        </p>
+        <p>
+            <label asp-for="Foto"></label>
+            <input asp-for="Foto" />
+        </p>
+        <button type="submit">Enviar</button>
+    </form>
+</div>

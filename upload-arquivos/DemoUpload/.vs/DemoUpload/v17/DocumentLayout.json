@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\paulo\\source\\caixa\\aula8\\DemoUpload\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2E1E4BB2-DCA3-47F5-B2BC-AB55E14F1E5F}|DemoUpload\\DemoUpload.csproj|c:\\users\\paulo\\source\\caixa\\aula8\\demoupload\\demoupload\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E1E4BB2-DCA3-47F5-B2BC-AB55E14F1E5F}|DemoUpload\\DemoUpload.csproj|solutionrelative:demoupload\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E1E4BB2-DCA3-47F5-B2BC-AB55E14F1E5F}|DemoUpload\\DemoUpload.csproj|c:\\users\\paulo\\source\\caixa\\aula8\\demoupload\\demoupload\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E1E4BB2-DCA3-47F5-B2BC-AB55E14F1E5F}|DemoUpload\\DemoUpload.csproj|solutionrelative:demoupload\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E1E4BB2-DCA3-47F5-B2BC-AB55E14F1E5F}|DemoUpload\\DemoUpload.csproj|c:\\users\\paulo\\source\\caixa\\aula8\\demoupload\\demoupload\\models\\pessoaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E1E4BB2-DCA3-47F5-B2BC-AB55E14F1E5F}|DemoUpload\\DemoUpload.csproj|solutionrelative:demoupload\\models\\pessoaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E1E4BB2-DCA3-47F5-B2BC-AB55E14F1E5F}|DemoUpload\\DemoUpload.csproj|c:\\users\\paulo\\source\\caixa\\aula8\\demoupload\\demoupload\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E1E4BB2-DCA3-47F5-B2BC-AB55E14F1E5F}|DemoUpload\\DemoUpload.csproj|solutionrelative:demoupload\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d2f6510a-150a-4f3f-9d7c-8e38622d26f7}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\paulo\\source\\caixa\\aula8\\DemoUpload\\DemoUpload\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "DemoUpload\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\paulo\\source\\caixa\\aula8\\DemoUpload\\DemoUpload\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "DemoUpload\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T00:21:00.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PessoaViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\paulo\\source\\caixa\\aula8\\DemoUpload\\DemoUpload\\Models\\PessoaViewModel.cs",
+              "RelativeDocumentMoniker": "DemoUpload\\Models\\PessoaViewModel.cs",
+              "ToolTip": "C:\\Users\\paulo\\source\\caixa\\aula8\\DemoUpload\\DemoUpload\\Models\\PessoaViewModel.cs",
+              "RelativeToolTip": "DemoUpload\\Models\\PessoaViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T00:20:55.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\paulo\\source\\caixa\\aula8\\DemoUpload\\DemoUpload\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "DemoUpload\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\paulo\\source\\caixa\\aula8\\DemoUpload\\DemoUpload\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "DemoUpload\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-31T00:14:27.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\paulo\\source\\caixa\\aula8\\DemoUpload\\DemoUpload\\Program.cs",
+              "RelativeDocumentMoniker": "DemoUpload\\Program.cs",
+              "ToolTip": "C:\\Users\\paulo\\source\\caixa\\aula8\\DemoUpload\\DemoUpload\\Program.cs",
+              "RelativeToolTip": "DemoUpload\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T00:14:18.02Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
